@@ -3,27 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 如果要在移动设备上显示，则要加上这一句，加上下面的style -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>干柿鬼鲛</title>
     <style>
-      max-width = 100%
+      /* 默认所有的CSS reset都要加的语句 */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      input,
+      button {
+        font-family: inherit;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      img{
+        max-width : 100%
+      }
     </style>
   </head>
   <body>
-    <h1>干柿鬼鲛</h1>
+    <h1>火影人物:干柿鬼鲛</h1>
+    <!-- 目录部分 -->
+    <nav>
+      <ol>
+        <li><a href="#Appearance">外表与性格</a></li>
+        <li><a href="#Life">身世与经历</a></li>
+        <li><a href="#Battle">重要战斗</a></li>
+        <li><a href="#Archives">个人档案</a></li>
+        <li><a href="#Ninjutsu">主要忍术</a></li>
+        <li><a href="#Picture">照片</a></li>
+        <li><a href="#Record">战绩</a></li>
+      </ol>
+    </nav>
+
+    <h2 id = Appearance>外表与性格</h2>
     <p>
       原为雾隐“忍刀七人众”的成员之一，有着跟鲛鲨相像的面孔（两边的肩膀处也有鲨鱼鳃）、
       肤色及尖锐的牙齿，金色瞳孔。死前为晓之成员，非常尊敬宇智波鼬，甚至会用敬语“鼬先
       生”，还会关心鼬的身体，在晓之中算是很听从命令的一个，从不透漏关于自己的事。
     </p>
-    <h2>重要战斗&人生经历</h2>
+    <h2 id= Life>身世与经历</h2>
+    <p>
+      <section>
+        回忆篇中鬼鲛他在成为叛忍前，是前任鲛肌主人西瓜山河豚鬼的亲信部下（当时的武器为刀），长年以来一直尽责地为雾忍者村执行难以想像的黑暗任务，其中甚至包括杀死一起执行任务的同伴，避免其落入敌方审问部队手中防泄漏情报，之后他杀死了通敌的上司西瓜山河豚鬼，成为鲛肌的新主人.
+      </section>
+      <section>
+        面对现身在自己面前的第四代水影矢仓，鬼鲛感叹自己只是个虚假的存在，突然有个自称宇智波斑的黑影从第四代水影背后出现，表示能够将鬼鲛从虚假的痛苦中解救出来，更邀请他成为自己的伙伴，鬼鲛确认了他的面容后，对他的“月之眼”计划颇为认同，之后加入了晓。
+      </section>
+    </p>
+    <h2 id = Battle >重要战斗&人生经历</h2>
     <ul>
-      <li>三忍决战篇</li>
+      <li>三忍决战</li>
       <li>风影夺还</li>
       <li>宇智波鼬追捕</li>
       <li>大战前夕刺探情报</li>
     </ul>
-    <h2>个人档案</h2>
+    <h2 id =Archives >个人档案</h2>
     <ol>
       <li>性格：好战</li>
       <li>喜欢的食物：虾子、螃蟹</li>
@@ -35,7 +87,7 @@
       <li>喜爱的字句：忍多久</li>
       <li>兴趣：保养鲛肌</li>
     </ol>
-    <h2>主要忍术</h2>
+    <h2 id = Ninjutsu >主要忍术</h2>
     <table>
       <thead>
         <tr>
@@ -46,24 +98,61 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>潜鲨突袭</td><td>	潜入水中，再出现快速攻击敌人。</td><td>	体</td><td>A</td></tr>	
-        <tr><td>通灵术</td><td>	召唤兽是鲨鱼。                  </td><td>	忍</td><td>	C</td></tr>
-        <tr><td>土遁·土中潜航</td><td>	使使用者周围的土地液化，能在土中游泳快速接近敌人。</td><td>	忍</td><td>	C</td></tr>
-        <tr><td>水遁·水分身术	</td><td>利用查克拉控制水进而制造分身的忍术，对此分身的攻击都会被水化解。</td><td>	忍</td><td>	C</td></tr>
-        <tr><td>水遁·水牢</td><td>术	利用查克拉制造水牢将对手困住的忍术，是常人100%不可能脱出的忍术。</td><td>	忍</td><td>	C</td></tr>
-        <tr><td>水遁·爆水冲波</td><td>	一口气吐出大量的水，能将一大片低漥谷地瞬间变成湖泊。是需要庞大查克拉的大范围忍术。能将战斗场地瞬间变成适合鬼鲛战斗的水域环境。</td><td>	忍</td><td>	B</td></tr>
-        <tr><td>水遁·大爆水冲波	</td><td>“水牢术”的升级版，制造一个足球场大小的水球把自己和敌人包在中间，水球会以自己为中心移动。因此只要自己在水中的速度比较快的话，对手就绝不可能逃出生天。是使用水牢鲛舞之前的前奏招式。</td><td>	忍</td><td>A	</td></tr>
-        <tr><td>水遁·水鲛弹术	</td><td>把水以鲨鱼的样子弹射出去，有很大的破坏力，鬼鲛也可进入水鲛弹中移动。</td><td>	忍</td><td>	B</td></tr>
-        <tr><td>水遁·五食鲛</td><td>	由五根手指放出五只“水鲛弹”，连续不断地攻击对方，而且这些鲨鱼就算被击破，也可以在水境中再生。	</td><td>忍	</td><td>B</td></tr>
-        <tr><td>水遁·千食鲛</td><td>	放出上千只“水鲛弹”，像海浪般攻击。</td><td>	忍</td><td>	B</td></tr>
-        <tr><td>水遁·大鲛弹术	</td><td>鬼鲛第二四强之术，“水鲛弹”超级升级版，产生超巨大的鲨鱼之囗，就像一只巨鲨把眼前东西一囗噬掉，能吸收对方查克拉、遇强愈强。	</td><td>忍</td><td>	A</td></tr>
-        <tr><td>水遁·水牢鲛舞	</td><td>先由鬼鲛使出“大爆水冲波”困住敌人，然后鬼鲛与大刀鲛肌合体形成鱼人模式向敌人发动进攻。鱼人模式下的鬼鲛可以用腮呼吸，可以通过查克拉来感知敌人的方位，敌人只要与鬼鲛近身接触就会被吸取查克拉，直至被鬼鲛将查克拉吸尽。</td><td>	忍</td><td>	S</td></tr>
+        <tr><th>潜鲨突袭</th><td>	潜入水中，再出现快速攻击敌人。</td><td>	体</td><td>A</td></tr>	
+        <tr><th>通灵术</th><td>	召唤兽是鲨鱼。                  </td><td>	忍</td><td>	C</td></tr>
+        <tr><th>土遁·土中潜航</th><td>	使使用者周围的土地液化，能在土中游泳快速接近敌人。</td><td>	忍</td><td>	C</td></tr>
+        <tr><th>水遁·水分身术	</th><td>利用查克拉控制水进而制造分身的忍术，对此分身的攻击都会被水化解。</td><td>	忍</td><td>	C</td></tr>
+        <tr><th>水遁·水牢</th><td>术	利用查克拉制造水牢将对手困住的忍术，是常人100%不可能脱出的忍术。</td><td>	忍</td><td>	C</td></tr>
+        <tr><th>水遁·爆水冲波</th><td>	一口气吐出大量的水，能将一大片低漥谷地瞬间变成湖泊。是需要庞大查克拉的大范围忍术。能将战斗场地瞬间变成适合鬼鲛战斗的水域环境。</td><td>	忍</td><td>	B</td></tr>
+        <tr><th>水遁·大爆水冲波	</th><td>“水牢术”的升级版，制造一个足球场大小的水球把自己和敌人包在中间，水球会以自己为中心移动。因此只要自己在水中的速度比较快的话，对手就绝不可能逃出生天。是使用水牢鲛舞之前的前奏招式。</td><td>	忍</td><td>A	</td></tr>
+        <tr><th>水遁·水鲛弹术	</th><td>把水以鲨鱼的样子弹射出去，有很大的破坏力，鬼鲛也可进入水鲛弹中移动。</td><td>	忍</td><td>	B</td></tr>
+        <tr><th>水遁·五食鲛</th><td>	由五根手指放出五只“水鲛弹”，连续不断地攻击对方，而且这些鲨鱼就算被击破，也可以在水境中再生。	</td><td>忍	</td><td>B</td></tr>
+        <tr><th>水遁·千食鲛</th><td>	放出上千只“水鲛弹”，像海浪般攻击。</td><td>	忍</td><td>	B</td></tr>
+        <tr><th>水遁·大鲛弹术	</th><td>鬼鲛第二四强之术，“水鲛弹”超级升级版，产生超巨大的鲨鱼之囗，就像一只巨鲨把眼前东西一囗噬掉，能吸收对方查克拉、遇强愈强。	</td><td>忍</td><td>	A</td></tr>
+        <tr><th>水遁·水牢鲛舞	</th><td>先由鬼鲛使出“大爆水冲波”困住敌人，然后鬼鲛与大刀鲛肌合体形成鱼人模式向敌人发动进攻。鱼人模式下的鬼鲛可以用腮呼吸，可以通过查克拉来感知敌人的方位，敌人只要与鬼鲛近身接触就会被吸取查克拉，直至被鬼鲛将查克拉吸尽。</td><td>	忍</td><td>	S</td></tr>
       </tbody>
     </table>
-    <h2>相貌</h2>
-    <img width = 400 src="1.jpg" alt="干柿鬼鲛"><br>
-    <img width = 400 src="2.jpg" alt="干柿鬼鲛"><br>
-    <img width = 400 src="3.jpg" alt="年轻时候的干柿鬼鲛"><br>
+    <h2 id=Picture>照片</h2>
+    <div>
+      <a href="1.jpg" target ="_blank">
+        <img width = 400 src="1.jpg" alt="干柿鬼鲛"><br>
+      </a>
+    </div>
+    <div>
+      <a href="2.jpg" target ="_blank">
+        <img width = 400 src="2.jpg" alt="晓组织的干柿鬼鲛"><br>
+      </a>
+    </div>
+    <div>
+      <a href="2.jpg" target ="_blank">
+        <img width = 400 src="3.jpg" alt="年轻时候的干柿鬼鲛"><br>
+      </a>
+    </div>
+    <h2 id = Record>战绩</h2>
+    <ul>
+      <li>胜于一同出任务的一群雾忍</li>
+      <li>胜于西瓜山河豚鬼</li>
+      <li>胜于猿飞阿斯玛</li>
+      <li>与阿凯的战斗被宇智波鼬阻止</li>
+      <li>逃于自来也</li>
+      <li>败于宇智波鼬</li>
+      <li>（象转分身）败于阿凯</li>
+      <li>胜于四尾人柱力‧老紫</li>
+      <li>平于鬼灯水月</li>
+      <li>胜于演歌师傅纱布酱、胖太</li>
+      <li>胜于日向宁次，李洛克和天天</li>
+      <li>胜于八尾人柱力‧杀人蜂</li>
+      <li>（寄生分身）败于雷影兄弟</li>
+      <li>逃于鸣人</li>
+      <li>败于阿凯（七门开) 后为不让木叶得到情报，召唤鲨鱼吞噬了自己</li>
+      <li>情报卷轴内设下水牢术束缚住木叶及云忍一行人，并让通灵兽把资料带回晓</li>
+      <li>与科主任单挑</li>
+    </ul>
+
+    <div style="height:700px"></div>
+
+
+
 
   </body>
 </html>
